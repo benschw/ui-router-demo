@@ -10,3 +10,6 @@ sudo npm install -g yo grunt-cli bower generator-angular
 - yes to bootstrap support
 - defaults for other modules
 
+
+	bower install angular-ui-router --save
+	bower install angular-bootstrap --save
