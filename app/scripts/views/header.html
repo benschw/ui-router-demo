@@ -1,8 +1,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
   <ul class="nav navbar-nav pull-right">
-    <li ng-class="{active: $state.current.name == 'app.home'}"><a ui-sref="app.home">Home</a></li>
-    <li ng-class="{active: $state.current.name == 'app.settings'}"><a ui-sref="app.settings">Settings</a></li>
+    <li ng-class="{active: $state.includes('app.home')}"><a ui-sref="app.home">Home</a></li>
+    <li ng-class="{active: $state.includes('app.settings')}"><a ui-sref="app.settings.details">Settings</a></li>
   </ul>
 
 </nav>

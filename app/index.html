@@ -21,11 +21,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container-fluid">
-      <div ui-view="header"></div>
-      <div ui-view=""></div>
-      <div ui-view="footer"></div>
-    </div>
+    <div ui-view="header"></div>
+    <div class="container" ui-view=""></div>
+    <div ui-view="footer"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -64,6 +62,9 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/home/home.js"></script>
+        <script src="scripts/settings/settings.js"></script>
+        <script src="scripts/settings/details/details.js"></script>
+        <script src="scripts/settings/quotes/quotes.js"></script>
         <!-- endbuild -->
 </body>
 </html>

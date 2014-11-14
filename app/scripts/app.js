@@ -18,7 +18,10 @@ angular
     'ngTouch',
     'ui.router',
     'ui.bootstrap',
-    'app.home'
+    'app.home',
+    'app.settings',
+    'app.settings.details',
+    'app.settings.quotes'
   ])
   .run(['$rootScope', '$state', '$stateParams',
     function ($rootScope, $state, $stateParams) {
