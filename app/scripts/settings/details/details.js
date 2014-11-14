@@ -2,8 +2,6 @@
 
 angular
   .module('app.settings.details', [
-    'ngResource',
-    'ngRoute',
     'ui.router',
     "app.settings"
   ])
