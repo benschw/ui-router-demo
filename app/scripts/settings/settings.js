@@ -23,6 +23,7 @@ angular
 
   }])
   .controller('SettingsController', ['$scope', function ($scope) {
+    //this is where you would pull back your user data from a service
     $scope.user = {
       name: "Bob Loblaw",
       email: "bobloblaw@lawblog.com",
