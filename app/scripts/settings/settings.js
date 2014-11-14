@@ -22,11 +22,8 @@ angular
       $stateProvider.state(settings);
 
   }])
-  .controller('SettingsController', ['$scope', function ($scope) {
-    //this is where you would pull back your user data from a service
-    $scope.user = {
-      name: "Bob Loblaw",
-      email: "bobloblaw@lawblog.com",
-      quotes: "Lorem ipsum dolor sic amet"
-    };
+  .controller('SettingsController', ['$scope', '$resource', function ($scope, $resource) {
+    var User = $resource('../stub-user.json');
+    var user = User.get();
+    $scope.user = user;
   }]);
