@@ -23,7 +23,7 @@ angular
 
   }])
   .controller('SettingsController', ['$scope', '$resource', function ($scope, $resource) {
-    var User = $resource('../stub-user.json');
+    var User = $resource('stub-user.json');
     var user = User.get();
     $scope.user = user;
   }]);
